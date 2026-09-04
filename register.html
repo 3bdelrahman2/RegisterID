@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>أنشئ ملفك الشخصي</title>
+    <meta
+      name="description"
+      content="أدخل بياناتك وسنتواصل معك لإنشاء ملفك الشخصي الرقمي."
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/register.css" />
+  </head>
+
+  <body>
+    <main class="register-container">
+      <section class="register-card">
+        <div class="register-header">
+          <span class="badge">إنشاء الملف الشخصي</span>
+
+          <h1>أنشئ ملفك الشخصي</h1>
+
+          <p>أدخل بياناتك وسنتواصل معك لإنشاء ملفك الشخصي.</p>
+        </div>
+
+        <form id="registerForm">
+          <div class="form-group">
+            <label for="name"
+              >الاسم الكامل <span class="required">*</span></label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="أدخل اسمك الكامل"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="phone"
+              >رقم الهاتف <span class="required">*</span></label
+            >
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              dir="ltr"
+              placeholder="01xxxxxxxxx"
+              pattern="^\+?[0-9\s-]{8,15}$"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="whatsapp"
+              >رقم الواتساب <span class="required">*</span></label
+            >
+            <input
+              type="tel"
+              id="whatsapp"
+              name="whatsapp"
+              dir="ltr"
+              placeholder="01xxxxxxxxx"
+              pattern="^\+?[0-9\s-]{8,15}$"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="emergencyNumber"
+              >رقم الطوارئ <span class="required">*</span></label
+            >
+            <input
+              type="tel"
+              id="emergencyNumber"
+              name="emergencyNumber"
+              dir="ltr"
+              placeholder="01xxxxxxxxx"
+              pattern="^\+?[0-9\s-]{8,15}$"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="mechanicNumber">رقم الميكانيكي</label>
+            <input
+              type="tel"
+              id="mechanicNumber"
+              name="mechanicNumber"
+              dir="ltr"
+              placeholder="01xxxxxxxxx"
+              pattern="^\+?[0-9\s-]{8,15}$"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">البريد الإلكتروني</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              dir="ltr"
+              placeholder="example@email.com"
+            />
+          </div>
+
+          <button type="submit" class="submit-button">إرسال الطلب</button>
+
+          <p id="formStatus" class="form-status" role="status"></p>
+        </form>
+
+        <a href="index.html" class="back-link">-- العودة للملف الشخصي --</a>
+      </section>
+    </main>
+
+    <script src="js/register.js"></script>
+  </body>
+</html>
